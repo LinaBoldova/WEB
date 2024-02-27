@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boldova Elina">
+    <title>Обратная связь</title>
+</head>
+<body>
+    <header>
+        <h1>Обратная связь</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="form.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Задайте свои вопросы</h2>
+            <form action="submit.php" method="post">
+                <p></p>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Имя" required>
+                </p>
+                <p>
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" placeholder="Почта" required>
+                </p>
+                <p>
+                <label for="message">Вопрос:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Задайте свой вопрос" required></textarea>
+                </p>
+                <fieldset> <legend>Насколько вам понравился мой сайт?</legend>
+                    <label for="optGood">Хорошо</label>
+                    <input name="option" id="optGood"  type="radio" value="good"><br>
+                    <label for="optNormal">Нормально</label>
+                    <input name="option" id="optNormal"  type="radio" value="normal"><br>
+                    <label for="optBad">Плохо</label>
+                    <input name="option" id="optBad" type="radio" value="bad"><br>
+                </fieldset>
+                <p>
+                <input type="submit" value="Отправить">
+                </p>
+            </form>
+        </section>
+        <section>
+            <article>
+                <h2>Мои контакты</h2>
+                <div>
+                    <span>Телефон: +7 (918) 141-17-77</span><br>
+                    <span>Почта: ebboldova@edu.hse.ru</span><br>
+                    <span>Телеграм: @linastewart</span>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Болдова Элина. Все права защищены.</p>
+    </footer>
+</body>
+</html>
