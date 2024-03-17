@@ -1,0 +1,282 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    padding-left: 35px;
+}
+
+h3 {
+    padding-left: 55px;
+}
+
+h4 {
+    padding-left: 65px;
+}
+
+p {
+    font-size: 20px;
+    color: #2C2438;
+    text-align: center;
+}
+
+#hse {
+    color: blue;
+}
+
+th, td {
+    border: 1px solid black;
+  }
+
+body {
+    color: #2C2438;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+} 
+
+img {
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.hr-sloping-lines {
+	margin: 20px 0;
+	padding: 0;
+	height: 10px;
+	border: none;
+	box-sizing: border-box;
+	background-position: 50%;
+	color: #805371;
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="blue"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
+	background-size: 6px 6px;
+}
+
+.work-block{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+blockquote {
+    border:1px solid gray;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+
+.subtitle {
+    font-family: 'cursive_font', cursive;
+    font-size: 20px;
+  }
+
+.about-block {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+video {
+    background-color: black !important;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .logo {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  figure {
+    display: table;
+  }
+  
+
+  figcaption {
+    display: table-caption;
+    caption-side: top;
+  }
+
+  ul li:nth-child(odd) {
+    background-color: cornflowerblue;
+  }
+
+   p::first-letter {
+        font-size: 120%;
+    }
+
+  figcaption[class="subtitle"] {
+    font-style: italic;
+    display: table-caption;
+    caption-side: top;
+    }
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+
+  nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 20px 30px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-out;
+    font-size: 16px;
+  }
+  .list {   
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: 20px;
+    display: none;
+    @media (min-width: 640px) {
+      display: flex;
+    }
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+}
+
+.box1 {
+    top: 20px;
+    left: 20px;
+}
+
+.box2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box3 {
+    bottom: 20px;
+    right: 20px;
+}
+
+#map { 
+  height: 400px; 
+}
+
+#feedback-form {
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; 
+  padding: 8px; 
+  border-radius: 4px; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+}
+
+fieldset input[type="radio"] {
+  margin-right: 5px; 
+}
+
+.contacts {
+  margin-top: 10px;
+}
+
+.contacts span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+#chat {
+  margin-top: 20px; 
+  position: relative;
+}
+
+#send-message {
+  width: 100px; 
+  padding: 10px; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: #007bff; 
+  color: #fff; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#send-message:hover {
+  background-color: #0056b3;
+}
+
+#chat button {
+  height: 12;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#chat button:hover {
+  background-color: #0056b3;
+}
+
+#record-audio {
+  padding: 8px;
+}
+
+.fa-microphone:before {
+  content: '\f130';
+  font-family: 'Font Awesome 5 Free';
+}

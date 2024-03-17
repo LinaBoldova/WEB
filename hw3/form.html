@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boldova Elina">
+    <title>Обратная связь</title>
+
+    <style>
+        p {
+        font-size: 20px;
+        color: #2C2438;
+        text-align: left;
+        padding-left: 20px;
+        }
+        section {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <h1>Обратная связь</h1>
+            <ol class="list">
+                <li><a href="index.html">Обо мне</a></li>
+                <li><a href="form.html">Обратная связь</a></li>
+            </ol>
+        </nav>
+    </header>
+    <hr class="hr-sloping-lines">
+    <main>
+        <section>
+            <h2>Интерактивная карта</h2>
+            <div id="map"></div>
+        </section>
+        <section>
+            <h2>Чат</h2>
+            <div id="chat">
+                <div id="chat-box"></div>
+                <input type="text" id="chat-input" class="chat-input" placeholder="Ваш вопрос...">
+                <button id="send-message">Отправить</button>
+                <button id="record-audio"><i class="fas fa-microphone"></i></button>
+                <!-- <button id="send-message" class="send-message">Отправить</button> -->
+            </div>
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <script src="script.js"></script>
+        </section>
+        <section>
+            <h2>Оставьте отзыв</h2>
+            <form action="submit.php" method="post" id="feedback-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" placeholder="Почта" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Отзыв:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Задайте свой вопрос" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Какое у вас сегодня настроение?</legend>
+                        <label for="optGood">Хорошее</label>
+                        <input name="option" id="optGood" type="radio" value="good"><br>
+                        <label for="optNormal">Нормальное</label>
+                        <input name="option" id="optNormal" type="radio" value="normal"><br>
+                        <label for="optBad">Плохое</label>
+                        <input name="option" id="optBad" type="radio" value="bad"><br>
+                    </fieldset>
+                </div>
+                
+                <input type="submit" value="Отправить">
+            </form>            
+        </section>
+        <section>
+            <article>
+                <h2>Мои контакты</h2>
+                <div class="contacts">
+                    <span>Телефон: +7 (918) 141-17-77</span>
+                    <span>Почта: <a href="mailto:ebboldova@edu.hse.ru">ebboldova@edu.hse.ru</a></span>
+                    <span>Телеграм: <a href="https://t.me/linastewart">@linastewart</a></span>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p style="text-align: left;">&copy; 2024 Болдова Элина. Все права защищены.</p>
+    </footer>
+</body>
+</html>
