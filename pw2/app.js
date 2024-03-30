@@ -47,7 +47,7 @@ async function serve(filePath, port) {
                     responseData = dataObject.gender;
                     break;
                 case "/all":
-                    responseData = dataObject;
+                    responseData = jsonData;
                     break;
                 default:
                     statusCode = 404;

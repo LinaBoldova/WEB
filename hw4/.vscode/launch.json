@@ -5,7 +5,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Safari",
-            "url": "http://localhost:8080",
+            "url": "file:///Users/elinaboldova/Documents/GitHub/WEB/hw4/",
             "webRoot": "${workspaceFolder}"
         }
     ]
